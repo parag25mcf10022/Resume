@@ -1,0 +1,112 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages for styling and layout
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter} % Professional, readable font
+\usepackage[margin=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+% Custom Colors and Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue, % Professional black links (stays blue on hover/click in some viewers)
+    urlcolor=blue
+}
+
+% Formatting sections
+\pagestyle{empty}
+\raggedright
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{7pt}{4pt} % Optimized spacing
+
+% Tighten list spacing to maintain 1-page layout
+\setlist[itemize]{noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2em}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{PARAG VINOD BAGADE}} \\
+    \vspace{4pt}
+    Nagpur, Maharashtra $|$ +91 9284181068 $|$ \href{mailto:bagade1122@gmail.com}{bagadeparag2@gmail.com} \\
+    \vspace{2pt}
+    \href{https://in.linkedin.com/in/parag-bagade-2597b1150}{LinkedIn} $|$ \href{https://www.openbugbounty.org/researchers/D3F4ULT/}{OpenBugBounty} $|$ \href{https://bugcrowd.com/h/Parag_B}{Bugcrowd}  $|$ \href{https://medium.com/@bagade1122}{Medium} $|$
+    \href{https://tryhackme.com/p/parag4455}{TryHackme}
+     $|$
+    \href{https://github.com/parag25mcf10022}{Github}
+\end{center}
+
+% Education
+\section{Education}
+\textbf{M.Tech in Cyber Security \& Digital Forensics }  \hfill CGPA: 8.98  \\ Vellore Institute of Technology  \hfill 2025 -- 2027 [Expected]  \\  
+\vspace{4pt}
+\textbf{B.Tech in Artificial Intelligence} \hfill CGPA: 8.26 \\
+ J D College of Engineering  \hfill 2021 -- 2024 \\
+% Skills
+\section{Skills}
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{1.3cm} X@{}}
+    \textbf{Offensive:} & Vulnerability Testing, OWASP Top 10, SAST, DAST, CVE Analysis, Secure SDLC, Penetration Testing\\
+\end{tabularx}
+\textbf{Security:} Incident Response, Threat Analysis, Security Auditing, Digital Forensics, Ethical Hacking \\
+\textbf{Tools:} Nmap, Burpsuite, Wireshark, Ghidra, Caldera, Autopsy, Nikto, Metasploit, SQLMap, Fuff, Shodan\\
+\textbf{Other:} CTF Competitions, Bug Bounty Hunting, Security Research, Responsible Disclosure, C++, SQL, Bash
+
+
+% Internship
+\section{Internship}
+\textbf{Secuneus Tech} \hfill Jalandhar, Punjab \\
+{Ethical Hacker Intern} \hfill Mar 2020 -- Feb 2021
+\begin{itemize}
+    \item Detected high-severity security flaws and remediated 7 critical vulnerabilities, including authentication bypass and privilege escalation, reducing attack surface by 30\%.
+    \item Reported 5 Medium Severity vulnerabilities to Govt. Of India.
+    \item Presented 25+ security findings to cross-functional teams in compliance with regulatory standards.
+\end{itemize}
+% Patents & Certifications
+\section{Patent \& Certifications}
+\textbf{Patent:} Passwordless Authentication \& Authorization Framework (Complete Specs Filed; details available on request) \\
+\noindent\textbf{Certifications:} Certified Ethical Hacker (CEH v10)\ \ |\ \ OSCP \textit{(In Progress)}\ \ |\ \ NPTEL Ethical Hacking\ \ | \ \ NPTEL Cloud Computing\ \ | \ \ Google Cybersecurity Certificate
+% Projects
+\section{Projects}
+\textbf{Hardware-Backed Passwordless Authentication Framework} \hfill {Filed Patent}
+\begin{itemize}
+    \item Engineered a secure passwordless authentication \& authorization mechanism that utilizes a Wear OS device as a hardware-backed authenticator, leveraging 256-bit AES  encryption to eliminate password-based vulnerabilities and phishing vectors resulting in reduction in credential-stuffing attacks, and phishing attacks.
+\end{itemize}
+\textbf{EncMsg --- End-to-End Encrypted Messenger}
+\hfill{{GitHub (In Active Development)}}
+\begin{itemize}
+  \item Zero-server-storage E2E messenger with device-bound auth (MAC + Android ID), TEE/Secure Enclave keys, post-read deletion, screenshot blocking, root detection.(In Development)
+\end{itemize}
+% Publications & Research
+\section{Research \& Publications } 
+\begin{itemize}
+    \item {MedQ Chat Bot/AI: An Intelligent Health Issue Analysis System}\\
+\textit{AIP Conference Proceedings}, Vol. 3214, Issue 1, 2024\ \ |\ \ \href{https://pubs.aip.org/aip/acp/article-abstract/3214/1/020042/3318705/MedQ-Chat-Bot-AI-An-intelligent-health-issue?redirectedFrom=fulltext}{doi:10.1063/5.0239121}\\
+\end{itemize}
+\begin{itemize}
+    \item {Enhanced Phishing URL Detection via Keyboard-Weighted Levenshtein Distance and Multi-Metric Fusion: Addressing the Limitations of Classical Edit Distance in Typosquatting Identification $|$ Under Review :  Intelligent Decision Technologies (IDT-26-1232)}\\
+\end{itemize}
+
+%Writeups
+\section{Security Writeups}
+\begin{itemize}
+    \item \noindent Technical write-ups documenting real-world vulnerability discoveries on Government 
+portals as well as other domains (SQLi, IDOR, Parameter Tampering, PII exposure, Account Takeover) \hfill
+\href{https://medium.com/@bagade1122} {Medium}
+\end{itemize}
+% Achievements
+\section{Achievements \& Bug Bounty Research}
+\begin{itemize}
+    \item  Named in 23+ Hall of Fame lists including Government of India, Lucid Motors, Shaadi.com, Paytm, and Razorpay for responsible disclosure.\hfill \href{https://drive.google.com/drive/folders/1yfNNksGZljp8W-uQMPWeilCP8JtXR2My?usp=sharing} {Reports}
+    \item  Discovered and reported 50+ critical and high-severity vulnerabilities across HackerOne, OpenBugBounty and Bugcrowd platforms (2018–Present), specializing in complex vulnerability chain analysis and multi-stage exploitation pathways that compromised confidentiality, integrity, and system availability.
+    \item Identified and documented critical vulnerabilities including Insecure Direct Object References IDOR, Authentication Bypass, and Personally Identifiable Information PII exposure, ensuring compliance with responsible disclosure policies and implementing data anonymization standards.\hfill \href{https://drive.google.com/drive/folders/1yfNNksGZljp8W-uQMPWeilCP8JtXR2My?usp=sharing}{Reports}
+    \item Uncovered and disclosed a Critical PII vulnerability in a university ERP serving 15,000+ users.Leveraged IDOR and Vertical Privilege Escalation to access sensitive student, faculty, and alumni records.Authored a technical exploit report and collaborated with authorities to implement system-wide patches.Commended for ethical disclosure and protecting institutional data integrity.
+\end{itemize}
+\end{document}
